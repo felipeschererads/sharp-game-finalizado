@@ -1,0 +1,1 @@
+ var App = new Controller(Model,View);
