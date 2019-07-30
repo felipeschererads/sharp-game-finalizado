@@ -270,6 +270,7 @@ function socketPlayed(cel, socket) {
 
     socket.emit('youWin');
     socketOponent.emit('youLose');
+    
   } else if (gameData.player1.selectedCel.length + gameData.player2.selectedCel.length >= 9) {
 
     console.log('empatou');
