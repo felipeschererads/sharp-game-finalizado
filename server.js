@@ -1,10 +1,13 @@
 var express = require('express');
 var app = express();
+const cors = require('cors')
 var http = require('http').Server(app);
 var io = require('socket.io')(http);
 var port = process.env.PORT || 3000;
 var uniqid = require('uniqid');
 var _ = require('lodash');
+
+app.use(cors())
 
 //armazena os usuários qu estão jogando neste momento
 var usuarios = [];
